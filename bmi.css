@@ -24,7 +24,7 @@ body {
     color: rgb(226, 123, 123);
     margin: 10px;
     border-radius: 5px;
-    z-index: index 10;
+    z-index: 10;
     box-shadow: 1px;
     height: 100px;
     
@@ -201,3 +201,4 @@ button:hover {
     font-size: 25px;
     color: white;
 }
+

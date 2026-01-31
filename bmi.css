@@ -21,7 +21,7 @@ body {
     align-items: center;
     padding: 5px;
     background-color: rgb(248, 54, 54);
-    color: rgb(253, 250, 250);
+    color: rgb(226, 123, 123);
     margin: 10px;
     border-radius: 5px;
     z-index: index 10;
@@ -108,7 +108,7 @@ label {
     display: block;
     margin-bottom: 6px;
     font-weight: bold;
-    color: rgb(8, 8, 8);
+    color: rgb(233, 7, 176);
 }
 
 input {
@@ -117,6 +117,7 @@ input {
     font-size: 1rem;
     border-radius: 5px;
     border: none;
+    color: rgb(247, 5, 5);
     
 }
 

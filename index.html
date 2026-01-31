@@ -4,145 +4,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hustle Fitness</title>
+    <title>About - Hustle Fitness</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
 </head>
 
 <body>
-    <!--header-->
-    <section id="header">
-        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="workout.html">Workout</a></li>
-                <li><a href="">Diet</a></li>
+
+    <!-- Popup -->
+    <div class="popup-bar" id="popupBar">
+        <div class="popup-content">
+            <div class="popup-text">
+                <span class="fire">🔥</span> Get Flat <strong>30% OFF</strong> by registering today!
+            </div>
+            <button class="popup-close" id="popupClose">X</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&#9889;</span> HUSTLE<span class="logo-accent">FITNESS</span>
+            </a>
+
+            <ul class="nav_links" id="navLinks">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html" class="active">About</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
-        </div>
-        <div id="mobile">
-            <i id="bar" class="fas fa-outdent"></i>
-            <a href="cart.html"></a><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-    </section>
-    <!--hero-->
-    <section id="hero">
-        <h1>Train Hard.<br>Stay Strong.</h1>
-        <p>Best fitness club in your city</p>
-        <button>Join Now</button>
-    </section>
 
-    <!--home product-->
-    <section id="product1" class="section-p1">
-        <h2>Our Products</h2>
-        
-        <div class="pro-container">
-            <div class="pro">
-                <img src="img/card_1.png" alt="Cardio Strength">
-                <h3>BODY BUILDING</h3>
-                <P>Build muscle with expert trainers</P>
-            </div>
-            <div class="pro">
-                <img src="img/card_2.png" alt="Personal Training">
-                <h3>WEIGHT LOSS</h3>
-                <p>Burn fat effectively.</p>
-
-            </div>
-            <div class="pro">
-                <img src="img/card_3.png" alt="Personal Training">
-                <h3>YOGA TRAINING</h3>
-                <p>Improve flexibility and peace.</p>
-
-            </div>
-            <div class="pro">
-                <img src="img/card_4.png" alt="Personal Training">
-                <h3>ZUMBA TRAINING</h3>
-                <p>Improve flexibility and peace.</p>
-
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-        
-    </section>
-    <!--arrival-->
-    <section id="arrival" class="section-p1">
-        <h2>Expert Trainers</h2>
-    <p>Certified professionals with years of experience</p>
-        <div class="pro-container">
-            <div class="pro">
-                 <img src="img/trainer_1.png" alt="Trainer">
-            <h3>John Smith</h3>
-            <p>Body Building Coach</p>
-                
+    </nav>
 
+    <!-- Mobile Slide Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
 
-
-            </div>
-            <div class="pro">
-                 <img src="img/trainer_2.png" alt="Trainer">
-            <h3>Emma Wilson</h3>
-            <p>Yoga Instructor</p>
-               
-
-
-            </div>
-            <div class="pro">
-                <img src="img/trainer_3.png" alt="Trainer">
-            <h3>David Lee</h3>
-            <p>Fitness Instructor</p>
-                
-
-
-            </div>
-            
-    </section>
-   
-    <!--newsletter-->
-    <section id="newsletter" class="section-p1">
-        <div class="newstext">
-            <h4>Sign Up for Newsletters</h4>
-            <p>Get E-mail updates</p>
-
+    <!-- Hero / About Header -->
+    <section class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80" alt="Gym Background" class="hero-img">
+            <div class="hero-overlay"></div>
         </div>
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button>Sign Up</button>
+        <div class="hero-content">
+            <h1 class="hero-title">About <span class="glow-text">Us</span></h1>
+            <p class="hero-sub">We are more than a gym — we are a movement.</p>
         </div>
     </section>
-    <!--footer-->
-   <footer class="section-p1">
-        <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.246690364946!2d80.22148547454832!3d13.083546012415145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526429015aff65%3A0x93ff641297699b35!2sBlock-C%2C%203%2F24%2C%20C%20Block%2C%20Annanagar%20East%2C%20Chennai%2C%20Tamil%20Nadu%20600030!5e0!3m2!1sen!2sin!4v1769226338314!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <!-- About Intro -->
+    <section class="about-intro">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-image">
+                    <div class="gym-image">
+                        <img src="logo.png" alt="Hustle Fitness Gym">
+                        <div class="img-overlay"></div>
+                        <div class="img-label">Est. 2015</div>
+                    </div>
+                </div>
+                <div class="intro-text">
+                    <h2>Where <span class="red-text">Strength</span> Meets Passion</h2>
+                    <p>Welcome to Hustle Fitness, your home for fitness and total transformation. Founded in 2015, we started with one simple goal — to help everyone in our community look, feel, and perform their best.</p>
+                    <p>Whether you are a complete beginner or a seasoned athlete, our state-of-the-art facilities, certified trainers, and supportive community are here to push you beyond your limits.</p>
+                    <a href="contact.html" class="btn-glow">Join Us Today</a>
+                </div>
             </div>
-        <div class="col">
-            <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
-            
         </div>
-        <div class="col">
-            <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">Delivery Information</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & Condition</a>
-            <a href="#">Contact Us</a>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose <span class="red-text">Hustle Fitness</span></h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=200&q=80" alt="Equipment">
+                    </div>
+                    <h3>World Class Equipment</h3>
+                    <p>We have the latest and best equipment to support your fitness journey from start to finish.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="trainer.png" alt="Expert Trainers">
+                    </div>
+                    <h3>Expert Trainers</h3>
+                    <p>Our certified and experienced trainers are here to guide and motivate you every single day.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="equipment.png" alt="Community">
+                    </div>
+                    <h3>Strong Community</h3>
+                    <p>Join a supportive and energetic community that pushes you to become the best version of yourself.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=200&q=80" alt="Nutrition">
+                    </div>
+                    <h3>Nutrition Support</h3>
+                    <p>Get personalized nutrition plans crafted by experts to fuel your body and maximize your results.</p>
+                </div>
+            </div>
         </div>
-        <div class="col">
-            <h4>My Account</h4>
-            <a href="#">Sign In</a>
-            <a href="#">View cart</a>
-            <a href="#">My Wishlist</a>
-            <a href="#">Track My order</a>
-            <a href="#">Help</a>
+    </section>
+
+    <!-- Gym Images Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Our <span class="glow-text">Facility</span></h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="strength.png" alt="Strength Zone">
+                    <div class="gallery-overlay">
+                        <span>Strength Zone</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="cardio.png" alt="Cardio Arena">
+                    <div class="gallery-overlay">
+                        <span>Cardio Arena</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="group.png" alt="Group Classes">
+                    <div class="gallery-overlay">
+                        <span>Group Classes</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="recovery.png" alt="Recovery Zone">
+                    <div class="gallery-overlay">
+                        <span>Recovery Zone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats-section">
+        <div class="stats-bg"></div>
+        <div class="container">
+            <div class="stats">
+                <div class="stat">
+                    <h2>500<span class="plus">+</span></h2>
+                    <p>Active Members</p>
+                </div>
+                <div class="stat">
+                    <h2>15<span class="plus">+</span></h2>
+                    <p>Expert Trainers</p>
+                </div>
+                <div class="stat">
+                    <h2>10<span class="plus">+</span></h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat">
+                    <h2>50<span class="plus">+</span></h2>
+                    <p>Programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to <span class="glow-text">Transform</span> Your Life?</h2>
+            <p>Start your fitness journey today. Your stronger self is waiting.</p>
+            <a href="contact.html" class="btn-glow btn-large">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">&#9889;</span> HUSTLE<span class="logo-accent">FITNESS</span>
+                    </a>
+                    <p>Your home for fitness, strength, and transformation. Let's build something great together.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="home.html">Home</a>
+                    <a href="index.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <a href="#">📍  no.7 taylors road, kilpauk, chennai</a>
+                    <a href="#">📞 +91 7904065331</a>
+                    <a href="#">✉️ hello@hustlefitness.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hustle Fitness. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
-
-
     <script src="script.js"></script>
 </body>
-
 
 </html>

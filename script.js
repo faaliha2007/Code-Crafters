@@ -1,15 +1,18 @@
- const bar= document.getElementById('bar')
-  const close= document.getElementById('close')
-  const nav= document.getElementById('navbar')
+// Close Popup
+document.getElementById('popupClose').addEventListener('click', function() {
+    document.getElementById('popupBar').style.display = 'none';
+});
 
- if (bar ) {
-    bar.addEventListener('click',() => {
-        nav.classList.add('active')
-    })
- }
- if (close ) {
-    close.addEventListener('click',() =>{
-        nav.classList.remove('active');
-    })
-    
- } 
+// Hamburger Menu
+document.getElementById('hamburger').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('navLinks').classList.toggle('active');
+    document.getElementById('menuOverlay').classList.toggle('active');
+});
+
+// Close menu when clicking overlay
+document.getElementById('menuOverlay').addEventListener('click', function() {
+    document.getElementById('hamburger').classList.remove('active');
+    document.getElementById('navLinks').classList.remove('active');
+    this.classList.remove('active');
+});

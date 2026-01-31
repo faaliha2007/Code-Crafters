@@ -1,0 +1,202 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+   
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(248, 54, 54);
+    color: rgb(253, 250, 250);
+    margin: 10px;
+    border-radius: 5px;
+    z-index: index 10;
+    box-shadow: 1px;
+    height: 100px;
+    
+
+}
+
+.nav-links {
+    font-size: 20px;
+    color: rgb(243, 235, 235);
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 100px;
+    cursor: pointer;
+
+}
+
+.nav-links a {
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+
+}
+
+.nav-links li:hover {
+    text-decoration: underline;
+    color: rgb(5, 5, 5);
+
+}
+
+/* Intro Section */
+.bmi-container {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  
+}
+
+.bmi-container-intro {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.bmi-container-text,
+.bmi-container-text2 {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Main Section */
+.bmi-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+   
+}
+
+/* Card */
+.container {
+    background: transparent;
+    padding: 20px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 25px rgba(247, 2, 2, 0.2);
+    border: 1px solid rgb(238, 70, 70);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: rgb(8, 8, 8);
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background: #ee8a8a;
+    border: none;
+    color: #f7f7f7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #f82525;
+}
+
+/* Result */
+#results {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Weight Guide */
+.weight-guide {
+    margin-top: 20px;
+    background:transparent;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 100px;
+    
+}
+
+.weight-guide h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Tablet & Desktop */
+@media (min-width: 768px) {
+    .bmi-container-intro {
+        font-size: 2rem;
+    }
+
+    .bmi-container-text,
+    .bmi-container-text2 {
+        font-size: 1.05rem;
+    }
+}
+.footer-container {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 380px;
+    padding: 10px;
+    margin: 5px;
+    top: 40px;
+
+}
+
+.footer-container-image a {
+    padding: 20px;
+
+
+
+}
+
+.footer-container-image img {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container-image p {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}

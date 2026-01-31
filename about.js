@@ -1,18 +1,35 @@
+// ===== HUSTLE FITNESS — ABOUT PAGE SCRIPT =====
+// All IDs prefixed with "ab" to avoid conflicts with other pages
+
 // Close Popup
-document.getElementById('popupClose').addEventListener('click', function() {
-    document.getElementById('popupBar').style.display = 'none';
+document.getElementById('abPopupClose').addEventListener('click', function () {
+    document.getElementById('abPopupBar').style.display = 'none';
 });
 
 // Hamburger Menu
-document.getElementById('hamburger').addEventListener('click', function() {
-    this.classList.toggle('active');
-    document.getElementById('navLinks').classList.toggle('active');
-    document.getElementById('menuOverlay').classList.toggle('active');
+var abHamburger = document.getElementById('abHamburger');
+var abNavLinks = document.getElementById('abNavLinks');
+var abMenuOverlay = document.getElementById('abMenuOverlay');
+
+// Toggle menu open/close
+abHamburger.addEventListener('click', function () {
+    abHamburger.classList.toggle('ab-active');
+    abNavLinks.classList.toggle('ab-active');
+    abMenuOverlay.classList.toggle('ab-active');
 });
 
-// Close menu when clicking overlay
-document.getElementById('menuOverlay').addEventListener('click', function() {
-    document.getElementById('hamburger').classList.remove('active');
-    document.getElementById('navLinks').classList.remove('active');
-    this.classList.remove('active');
+// Close menu when overlay is clicked
+abMenuOverlay.addEventListener('click', function () {
+    abHamburger.classList.remove('ab-active');
+    abNavLinks.classList.remove('ab-active');
+    abMenuOverlay.classList.remove('ab-active');
+});
+
+// Close menu when any nav link is clicked
+document.querySelectorAll('.ab-nav-links li a').forEach(function (link) {
+    link.addEventListener('click', function () {
+        abHamburger.classList.remove('ab-active');
+        abNavLinks.classList.remove('ab-active');
+        abMenuOverlay.classList.remove('ab-active');
+    });
 });
